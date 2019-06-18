@@ -45,8 +45,9 @@ public class playermove : MonoBehaviour
         // {
         //    speed += FB;
         // };
-        transform.rotation = Quaternion.Euler (0f, Heading *50 * Time.deltaTime, 0f);
-        
+        transform.rotation = Quaternion.Euler (0f, Heading * 5f, -LR * 45f );
+        //transform.GetChild(0).transform.rotation = Quaternion.Euler(0f, 0f, );
+
         //GetComponent<Rigidbody>().rotation = Quaternion.Euler (0.0f, Heading, 0.0f);
 
     }
